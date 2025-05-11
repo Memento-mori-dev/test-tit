@@ -1,9 +1,8 @@
 @use './functions' as *;
 
-$laptop: 1440.98;
+$laptop: 1280.98;
 $tablet: 1023.98;
 $mobile: 767.98;
-$mobile-s: 480.98;
 
 @mixin laptop-above {
   @media (width > rem($laptop)) {
@@ -41,17 +40,6 @@ $mobile-s: 480.98;
   }
 }
 
-@mixin mobile-s-above {
-  @media (width > rem($mobile-s)) {
-    @content;
-  }
-}
-
-@mixin mobile-s {
-  @media (width <= rem($mobile-s)) {
-    @content;
-  }
-}
 
 @mixin hover($hasActiveEffectOnMobile: true) {
   @media (any-hover: hover) {

@@ -2,7 +2,9 @@
 
 :root{
     // color
-
+    --white: #fff;
+    --black: #000;
+    --white-green: #f6ffd2;
 
     // font
     --font-family: "Actay", sans-serif;
@@ -10,9 +12,11 @@
     --font3: "Inter", sans-serif;
 
     // width and padding
-    --container-width: #{rem(1600)};
-    --container-padding-x: #{rem(1600)};
+    --container-width: #{rem(1140)};
+    --container-padding-x: #{rem(15)};
 
     // animation
     --transition-duration: .2s;
+
+    color: var(--black);
 }

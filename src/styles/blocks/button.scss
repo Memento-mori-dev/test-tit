@@ -1,0 +1,14 @@
+@use '../helpers' as *;
+
+.button{
+    @include fluid-text(24, 20);
+    padding: fluid(11, 9) fluid(78, 66);
+    font-family: var(--font3);
+    border: none;
+    border-radius: fluid(25, 21);
+
+    &--white{
+        background-color: var(--white);
+        color: var(--black);
+    }
+}

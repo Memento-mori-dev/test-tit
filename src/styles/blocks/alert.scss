@@ -1,0 +1,41 @@
+@use '../helpers' as *;
+
+.alert{
+    position: relative;
+    width: rem(993);
+    padding: rem(95) rem(61);
+    background-color: var(--white);
+    border-radius: rem(35);
+
+    &__content{
+        line-height: 140%;
+        text-align: center;
+        overflow-y: auto;
+        height: 100%;
+
+        &::-webkit-scrollbar{
+            width: rem(6);
+            border-radius: rem(6);
+        }
+        &::-webkit-scrollbar{
+            background: rgba(70, 70, 70, 0.3);
+        }
+        &::-webkit-scrollbar-thumb{
+            width: rem(4);
+            border-radius: rem(6);
+            background: rgba(70, 70, 70, 0.8);
+        }
+    }
+
+
+    &__close{
+        position: absolute;
+        top: rem(20);
+        right: rem(20);
+        border: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

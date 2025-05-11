@@ -4,6 +4,8 @@ body{
     @include fluid-text(18, 14);
 
     font-family: var(--font-family);
+
+    background: gainsboro;
 }
 
 h1, .h1,
@@ -12,11 +14,12 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6{
-    color: #000;
+    color: var(--white);
+    font-family: var(--second-family);
 }
 
 h1, .h1{
-    @include fluid-text();
+    @include fluid-text(90, 35);
 }
 h2, .h2{
     @include fluid-text();
@@ -42,6 +45,18 @@ textarea,
 select,
 svg *{
     transition-duration: var(--transition-duration);
+}
+
+
+a,
+button,
+label,
+input{
+    transition: all var(--transition-duration);
+
+    @include hover{
+        opacity: .8;
+    }
 }
 
 :focus-visible{

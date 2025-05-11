@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.menu{
+    margin-left: 34px;
+
+    & ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    & li{
+        &:not(:first-child){
+            margin-left: 4px;
+        }
+    }
+
+    & a{
+        padding: 18px 18px 18px 18px;
+
+        text-decoration: none;
+        color: var(--white);
+        @include fluid-text(20, 14);
+        line-height: 46%;
+    }
+}

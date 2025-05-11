@@ -4,3 +4,11 @@
 @use 'utils';
 @use 'globals';
 
+@use './blocks/header.scss';
+@use './blocks/menu.scss';
+@use './blocks/link.scss';
+@use './blocks/hero.scss';
+@use './blocks/map.scss';
+@use './blocks/button.scss';
+@use './blocks/modal.scss';
+@use './blocks/alert.scss';

@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.link{
+    @include fluid-text(20, 14);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+
+    &__icon{
+        padding-right: rem(36);
+
+        &--arrow{
+            background-image: url(/public/svg/arrow-t-r.svg);
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+}

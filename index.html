@@ -8,11 +8,108 @@
     <link rel="stylesheet" href="./src/styles/main.scss">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__menu">
+          <a href="/" class="header__logo">
+            <img src="./public/svg/logo.svg" alt="Логотип" width="140px" height="45px">
+          </a>
 
-    <main></main>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Loren Ipsum</a></li>
+              <li><a href="#">Loren Ipsum</a></li>
+              <li><a href="#">Loren Ipsum</a></li>
+            </ul>
+          </nav>
+        </div>
 
-    <footer></footer>
+        <a href="#" class="link">
+          <span class="link__icon link__icon--arrow">Loren Ipsum</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__header">
+              <h1>Loren Ipsum</h1>
+            </div>
+
+            <div class="hero__main">
+              <div class="map">
+                <div class="map__item map__item--1">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+
+                <div class="map__item map__item--2">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+
+                <div class="map__item map__item--3">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+
+                <div class="map__item map__item--4">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+
+                <div class="map__item map__item--5">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+
+                <div class="map__item map__item--6">
+                  <img src="/public/map/ellipse-1.svg" alt="" class="map__item-number">
+
+                  <p class="map__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__footer">
+              <button class="button button--white" data-js-open-modal="">INFO</button>
+            </div>
+          </div>
+        </section>
+
+
+    </main>
+
+    <div class="modal open" data-js-modal>
+      <div class="alert" data-js-modal-block="alert">
+        <button class="alert__close">
+          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45.7031 19.2969L19.2969 45.7031M19.2969 19.2969L45.7031 45.7031" stroke="black" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="alert__content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur accusamus, impedit molestiae ut enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium, aliquid ab doloribus quo possimus minus dolorem. Sequi explicabo quidem rem veniam rerum itaque consectetur accusamus, impedit molestiae ut enim!
+        </div>
+      </div>
+    </div>
     
     <script type="module" src="/src/main.js"></script>
   </body>
