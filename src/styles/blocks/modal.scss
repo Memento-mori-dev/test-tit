@@ -14,8 +14,16 @@
     transition: all var(--transition-duration);
     opacity: 0;
 
-    &.open{
+    &.is-open{
         opacity: 1;
         pointer-events: auto;
+    }
+
+    &__item{
+        display: none;
+
+        &.is-show{
+            display: block;
+        }
     }
 }
